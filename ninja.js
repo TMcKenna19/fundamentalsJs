@@ -28,12 +28,24 @@ class Ninja {
       console.log("SUPER SAKE!!!!!, health power up 10 points")
       this.health += 10
   }
+
+  eatRamen(){
+      console.log("Slurp slurp, FUELED BY RAMEN, speed up 3 points ")
+      this.speed += 5
+  }
+
+  dojoTraining(){
+      console.log("The student has become the master")
+      this.strenght +=5
+  }
   
 }
 ninjaOne = new Ninja("Tim",100)
-ninjaTwo = new Ninja("Rob", 100)
-
-ninjaTwo.sayName()
+// ninjaTwo = new Ninja("Rob", 100)
+ninjaOne.sayName()
+// ninjaTwo.sayName()
 console.log()
-ninjaOne.drinkSake()
+// ninjaOne.drinkSake()
+ninjaOne.eatRamen()
+ninjaOne.dojoTraining()
 ninjaOne.showStats()

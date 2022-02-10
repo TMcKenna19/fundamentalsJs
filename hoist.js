@@ -22,7 +22,7 @@ function print(){
     brendan = 'only okay';
     console.log(brendan);
 }
-console.="support method from-rainbow">log(brendan);
+// console.="support method from-rainbow">log(brendan);
 //output = syntax error
 
 //4
@@ -90,6 +90,15 @@ function makeDojo(name, students){
     return dojo;
 }
 //output = syntax error 
+
+var foo = "bar";
+function magic(){
+    foo = "Hello world";
+    console.log(foo);
+    var foo;
+}
+magic();
+console.log(foo);
 
 
 

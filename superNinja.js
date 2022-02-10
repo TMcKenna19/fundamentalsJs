@@ -12,11 +12,17 @@ class Ninja {
         
     }
     sayName(){
-        console.log(`${this.name}`)
+        console.log(`${this.nameInput}`)
         
     }
+
+    showHealth(){
+      let myHealth = `My health: ${this.health}` 
+      console.log(myHealth)
+    }
+
     showStats(){
-        let info = `My stats: \n Name: ${this.name} \n Health: ${this.health} \n Speed: ${this.speed} \n Strength: ${this.strenght}`
+        let info = `My stats: \n Name: ${this.nameInput} \n Health: ${this.health} \n Speed: ${this.speed} \n Strength: ${this.strenght}`
         console.log(info)
     }
   
@@ -27,7 +33,9 @@ class Ninja {
     
   }
 
+  
 
+  
 
 class Sensei extends Ninja {
     constructor(nameInput,health){
@@ -43,10 +51,12 @@ class Sensei extends Ninja {
 
 
 ninjaOne = new Sensei("Tim",100)
-//   ninjaTwo = new Ninja("Rob", 100)
+// ninjaTwo = new Ninja("Rob", 100)
   
 //   ninjaTwo.sayName()
 //   console.log()
 //   ninjaOne.drinkSake()
 //   ninjaOne.showStats()
-ninjaOne.speakWisdom()
+// ninjaOne.speakWisdom();
+// ninjaOne.showStats();
+ninjaOne.showHealth();
