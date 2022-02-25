@@ -68,3 +68,19 @@ console.log(willThisWork);
 //[1,5,1,8,3,3]
 //5
 
+
+const person = { 
+    firstName: 'Bob', 
+    lastName: 'Marley', 
+    email: 'bob@marley.com', 
+    password: 'sekureP@ssw0rd9', 
+    username: 'barley', 
+    createdAt: 1543945177623
+};
+const animals = ['horse', 'dog', 'fish', 'cat', 'bird'];
+
+let newEmail = person.email;
+const {firstName, email, username } = person;
+console.log(person);
+console.log(newEmail);
+
